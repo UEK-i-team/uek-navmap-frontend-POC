@@ -6,15 +6,18 @@
         "@testing-library/jest-dom": "^5.17.0",
         "@testing-library/react": "^13.4.0",
         "@testing-library/user-event": "^13.5.0",
+        "prop-types": "^15.8.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-scripts": "5.0.1",
+        "styled-components": "^6.1.8",
         "web-vitals": "^2.1.4"
     },
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
+        "cypress:open": "cypress open",
         "eject": "react-scripts eject",
         "check-branch-name": "chmod 755 ./.husky/hooks/check_branch_naming.sh && sh ./.husky/hooks/check_branch_naming.sh",
         "prepare": "husky install"
@@ -41,6 +44,7 @@
         "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
         "@commitlint/cli": "^18.6.1",
         "@commitlint/config-conventional": "^18.6.2",
+        "cypress": "^13.6.4",
         "eslint": "^8.56.0",
         "eslint-config-prettier": "^9.1.0",
         "eslint-plugin-prettier": "^5.1.3",

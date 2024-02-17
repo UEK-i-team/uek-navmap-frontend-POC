@@ -1,5 +1,9 @@
 name: Unit tests
 on: push
+permissions:
+  contents: read
+  actions: read
+  checks: write
 jobs:
   build:
     runs-on: ubuntu-latest

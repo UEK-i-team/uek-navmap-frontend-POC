@@ -1,7 +1,7 @@
 import React from 'react';
 
+import { Hello } from '../../components/Hello/Hello';
 import { render, screen } from '../../test-utils';
-import { Hello } from './Hello';
 
 describe('Hello component', () => {
   test('Should render text', () => {

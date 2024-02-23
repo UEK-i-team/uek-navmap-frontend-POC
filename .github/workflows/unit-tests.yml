@@ -1,0 +1,24 @@
+name: Unit tests
+
+on: push
+
+permissions:
+  contents: read
+  actions: read
+  checks: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install modules
+      run: npm install
+    - name: Run tests
+      run: npm run test:ci
+    - name: Test Report
+      uses: dorny/test-reporter@v1
+      if: success() || failure()
+      with:
+        name: JEST Tests
+        path: junit.xml
+        reporter: jest-junit   

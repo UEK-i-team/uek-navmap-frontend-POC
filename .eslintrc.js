@@ -12,9 +12,11 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', 'simple-import-sort'],
+  plugins: ['react', 'simple-import-sort', 'react-hooks'],
   rules: {
     'simple-import-sort/imports': 'error',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
   },
   globals: {
     module: true,
